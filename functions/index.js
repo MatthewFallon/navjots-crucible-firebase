@@ -24,7 +24,7 @@ const app = express();
 // })
 
 app.get('/:helloworld',(req,res) =>{
-    return res.status(200).send("hello world")
+    return res.status(200).send(req.params.helloworld)
 });
 
  
